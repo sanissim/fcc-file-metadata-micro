@@ -1,0 +1,31 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Please upload a file to see its size:
+      </h1>
+    </header>
+
+<form action="https://fcc-file-metadata-micro.glitch.me/get-file-size" method="post" enctype="multipart/form-data">
+  <input type="file" name="testFile" id="fileToUpload">
+  <input type="submit" value="Upload" name="submit">  
+</form>
+
+  </body>
+</html>
